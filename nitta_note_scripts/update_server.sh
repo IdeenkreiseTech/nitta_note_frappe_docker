@@ -1,6 +1,6 @@
 # Update code in site
 git_password=123
-site_name=hybrid.localhost
+site_name=nitta.localhost
 
 cd ../
 sudo docker login ghcr.io -u IdeenkreiseTech -p $git_password

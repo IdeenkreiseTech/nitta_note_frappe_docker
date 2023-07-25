@@ -87,3 +87,8 @@ services:
 # ERPNext requires local assets access (Frappe does not)
 volumes:
   sites:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: /mariadb/nitta_approval/sites

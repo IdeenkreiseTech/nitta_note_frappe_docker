@@ -26,5 +26,20 @@ services:
 
 volumes:
   redis-cache-data:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: /mariadb/nitta_approval/redis-cache-data
   redis-queue-data:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: /mariadb/nitta_approval/redis-queue-data
   redis-socketio-data:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: /mariadb/nitta_approval/redis-socketio-data
